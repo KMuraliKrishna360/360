@@ -1,0 +1,28 @@
+<html>
+<style>
+</style>
+<body>
+<p> here is the chat box</p>
+<button class="open" onclick="openForm()">chat</button>
+<div class="chat" id="myForm">
+ <form class="form">
+   <h1> chat</h1>
+    <label for="msg"><b>message</b></label>
+    <textarea placeholder="type here" name="msg" required></textarea>
+
+    <button type="submit" class="btn">Send</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+</body>
+</html>
